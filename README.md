@@ -1,11 +1,11 @@
 # Tested with Cura
 ## Read carefully plr.cfg
 
-In the Slicer
+In your  Slicer
 
-in the last row of start gcode add: save_last_file
+add as the last row of start gcode add: save_last_file
 
-in the first row of end gcode add: clear_last_file
+add as the first row of end gcode add: clear_last_file
 
 at every layer add gcode macro: LOG_Z
 
