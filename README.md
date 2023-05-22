@@ -2,18 +2,25 @@
 ## Read carefully plr.cfg
 
 In the Slicer
+
 in the last row of start gcode add: save_last_file
+
 in the first row of end gcode add: clear_last_file
 
 at every layer add gcode macro: LOG_Z
+
 in Cura Add Post processing script "Insert at layer Change" and insert "After", G-code: LOG_Z
 
 copy plr.sh in /home/pi/printer_data/config/scripts/
+
 in putty: chmod +x /home/pi/printer_data/config/scripts/plr.sh
+
 in Kiauh install Gcode Shell Command
 
 In printer.cfg or here you need:
+
 [save_variables]
+
 filename: ~/save_variables.cfg  # needed for Power Loss Recovery plr.cfg
 
 
