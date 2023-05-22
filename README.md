@@ -3,13 +3,13 @@
 
 In your  Slicer
 
-add as the last row of start gcode add: save_last_file
+add as the last row of start gcode: save_last_file
 
-add as the first row of end gcode add: clear_last_file
+add as the first row of end gcode: clear_last_file
 
 at every layer add gcode macro: LOG_Z
 
-in Cura Add Post processing script "Insert at layer Change" and insert "After", G-code: LOG_Z
+(in Cura add post processing script "Insert at layer Change" and insert "After", G-code: LOG_Z )
 
 copy plr.sh in /home/pi/printer_data/config/scripts/
 
